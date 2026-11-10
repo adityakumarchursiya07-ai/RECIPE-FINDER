@@ -2,7 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import RecipeCard from "../components/RecipeCard";
 import { Link } from "react-router";
-import useloading from "../../hooks/useloading";
+import useloading from "../Hooks/Useloading";
+
+
 
 
 
@@ -79,7 +81,7 @@ function Home() {
   const [total, setTotal] = useState(0);
   const [errormsg, setErrorMsg] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
-   const { loading, startLoading, stopLoading } = useloading();
+   const { loading, startLoading, stopLoading } = useloading()
   async function fetchReciepe(skipCount, query) {
     startLoading();
     try {
