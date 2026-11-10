@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-
-
-function UseLoading() {
+function useloading() {
   const [loading, setLoading] = useState(true);
 
   const startLoading = () => setLoading(true);
@@ -16,4 +14,4 @@ function UseLoading() {
   };
 }
 
-export default UseLoading;
+export default useloading;
